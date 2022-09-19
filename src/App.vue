@@ -31,6 +31,7 @@
     <nav>
       <router-link to="/resumes">Resumes</router-link>
     </nav>
+    <router-view />
 
     <!-- Footer -->
     <section id="footer">
