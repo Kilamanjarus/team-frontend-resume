@@ -1,4 +1,6 @@
 <template>
+  <div id="app">
+    <!-- Header -->
     <section id="header">
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
@@ -24,16 +26,20 @@
         </ul>
       </footer>
     </section>
-  <router-view/>
-  <section id="footer">
-          <div class="container">
-            <ul class="copyright">
-              <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-          </div>
-        </section>
+
+    <!-- Router View -->
+    <nav>
+      <router-link to="/resumes">Resumes</router-link>
+    </nav>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </template>
-
-<style>
-
-</style>
