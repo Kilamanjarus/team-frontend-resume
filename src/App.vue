@@ -4,7 +4,7 @@
     <!-- Header -->
     <section id="header" v-if="this.$route.name === 'resumesShow'">
       <header>
-        <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+        <span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="#">Willis Corto</a></h1>
         <p>I got reprogrammed by a rogue AI<br />
           and now I'm totally cray</p>
