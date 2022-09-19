@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 export default {
   data: function () {
     return {
@@ -6,8 +8,18 @@ export default {
       message: "Welcome to Vue.js!"
     };
   },
-  created: function () { },
-  methods: {},
+  created: function () {
+    this.studentShow();
+  },
+  methods: {
+    studentShow: function () {
+      console.log(`showing student...`)
+      axios.get(`http://localhost:3000/students/${this.$route.params.id}.json`).then(response => {
+        console.log(response.data)
+        this.student = response.data
+      })
+    }
+  },
 };
 </script>
   
@@ -467,7 +479,6 @@ export default {
       -->
 
       </div>
-
     </div>
 
 
