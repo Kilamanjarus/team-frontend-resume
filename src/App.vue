@@ -1,12 +1,13 @@
 <template>
   <div id="app">
+
     <!-- Header -->
-    <section id="header">
+    <section id="header" v-if="this.$route.name === 'resumeShow'">
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="#">Willis Corto</a></h1>
         <p>I got reprogrammed by a rogue AI<br />
-        and now I'm totally cray</p>
+          and now I'm totally cray</p>
       </header>
       <nav id="nav">
         <ul>
@@ -44,4 +45,5 @@
       </div>
     </section>
   </div>
+
 </template>
