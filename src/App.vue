@@ -2,7 +2,7 @@
   <div id="app">
 
     <!-- Header -->
-    <section id="header" v-if="this.$route.name === 'resumeShow'">
+    <section id="header" v-if="this.$route.name === 'resumesShow'">
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="#">Willis Corto</a></h1>
