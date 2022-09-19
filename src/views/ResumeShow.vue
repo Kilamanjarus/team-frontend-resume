@@ -23,7 +23,7 @@ export default {
         <!-- One -->
         <section id="one">
           <div class="image main" data-position="center">
-            <img src="images/banner.jpg" alt="" />
+            <img src="/images/banner.jpg" alt="" />
           </div>
           <div class="container">
             <header class="major">
@@ -63,7 +63,7 @@ export default {
               Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
             <div class="features">
               <article>
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>
                 <div class="inner">
                   <h4>Possibly broke spacetime</h4>
                   <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
@@ -71,7 +71,7 @@ export default {
                 </div>
               </article>
               <article>
-                <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                <a href="#" class="image"><img src="/images/pic02.jpg" alt="" /></a>
                 <div class="inner">
                   <h4>Terraformed a small moon</h4>
                   <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
@@ -79,7 +79,7 @@ export default {
                 </div>
               </article>
               <article>
-                <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                <a href="#" class="image"><img src="/images/pic03.jpg" alt="" /></a>
                 <div class="inner">
                   <h4>Snapped dark matter in the wild</h4>
                   <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
@@ -92,6 +92,25 @@ export default {
 
         <!-- Four -->
         <section id="four">
+          <div class="container">
+            <h3>Capstone</h3>
+            <p>Capstone.description will go here</p>
+            <div class="features">
+              <article>
+                <a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>
+                <div class="inner">
+                  <h4>Capstone Screenshot</h4>
+                  <p>This is the screenshop demonstration of the capstone project</p>
+                </div>
+                <p></p>
+                <a href="#" class="text">Demo Url</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- five -->
+        <section id="five">
           <div class="container">
             <h3>Contact Me</h3>
             <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.
@@ -114,6 +133,7 @@ export default {
             </form>
           </div>
         </section>
+
 
         <!-- Five -->
         <!--
@@ -423,23 +443,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
           <section>
             <h4>Image</h4>
             <h5>Fit</h5>
-            <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+            <span class="image fit"><img src="/images/banner.jpg" alt="" /></span>
             <div class="box alt">
               <div class="row gtr-50 gtr-uniform">
-                <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-                <div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic01.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic02.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic03.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic02.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic03.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic01.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic03.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic01.jpg" alt="" /></span></div>
+                <div class="col-4"><span class="image fit"><img src="/images/pic02.jpg" alt="" /></span></div>
               </div>
             </div>
             <h5>Left &amp; Right</h5>
-            <p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-            <p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+            <p><span class="image left"><img src="/images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+            <p><span class="image right"><img src="/images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
           </section>
 
         </div>
