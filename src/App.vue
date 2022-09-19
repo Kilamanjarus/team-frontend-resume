@@ -1,19 +1,21 @@
 <template>
   <div id="app">
+
     <!-- Header -->
-    <section id="header">
+    <section id="header" v-if="this.$route.name === 'resumesShow'">
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="#">Willis Corto</a></h1>
         <p>I got reprogrammed by a rogue AI<br />
-        and now I'm totally cray</p>
+          and now I'm totally cray</p>
       </header>
       <nav id="nav">
         <ul>
           <li><a href="#one" class="active">About</a></li>
           <li><a href="#two">Things I Can Do</a></li>
           <li><a href="#three">A Few Accomplishments</a></li>
-          <li><a href="#four">Contact</a></li>
+          <li><a href="#four">Capstone</a></li>
+          <li><a href="#five">Contact</a></li>
         </ul>
       </nav>
       <footer>
@@ -31,6 +33,8 @@
     <nav>
       <router-link to="/resumes">Resumes</router-link>
     </nav>
+    <router-view />
+
     <router-view />
 
     <!-- Footer -->

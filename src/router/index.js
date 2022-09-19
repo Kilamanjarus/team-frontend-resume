@@ -16,7 +16,7 @@ const routes = [
   },
   {
     path: '/resumes/:id',
-    name: 'resumeShow',
+    name: 'resumesShow',
     component: ResumeShow
   },
   {
