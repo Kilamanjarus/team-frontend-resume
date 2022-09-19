@@ -29,8 +29,7 @@
 
     <!-- Router View -->
     <nav>
-      <router-link to="/">Resumes</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/resumes">Resumes</router-link>
     </nav>
 
     <!-- Footer -->
