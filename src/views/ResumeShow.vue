@@ -1,13 +1,25 @@
 <script>
+import axios from 'axios';
+
 export default {
   data: function () {
     return {
-      student: {first_name: "Joe", last_name: "Ulica", email: "joe@joe.com", phone_number: "23456789", short_bio: "An Actualize Student in the Loopsy Daisy June 2022 cohort", linkedIn: "https://www.linkedin.com/", twitter: "https://twitter.com/?lang=en", personal_website: "google.com", online_resume_url: "https://www.michiganhumane.org/wp-content/uploads/2018/07/Cat-Google-Maps.png", github_url: "https://github.com/", photo: "", experience: [{start_date: "1/2/2016", end_date: "2/4/2018", job_title: "marketing", company_name: "DC United", details: "This is a made up job"}, {start_date: "1/2/2016", end_date: "2/4/2018", job_title: "marketing", company_name: "DC United", details: "This is a made up job"}], education: [{start_date: "1/2/2011", end_date: "2/3/2015", degree: "B.S. Administration", university_name: "Washington and Lee University", details: ""}, {start_date: "1/2/2011", end_date: "2/3/2015", degree: "B.S. Administration", university_name: "Washington and Lee University", details: ""}], skills: ["ruby", "javaScript", "Vue"], capstone: {name: "Sample Capstone", description: "This is a fill in sample description", url: "https://www.yahoo.com/?guccounter=1", screenshot: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*"}},
+      student: {},
       message: "Welcome to Vue.js!"
     };
   },
-  created: function () { },
-  methods: {},
+  created: function () {
+    this.studentShow();
+  },
+  methods: {
+    studentShow: function () {
+      console.log(`showing student...`)
+      axios.get(`http://localhost:3000/students/${this.$route.params.id}.json`).then(response => {
+        console.log(response.data)
+        this.student = response.data
+      })
+    }
+  },
 };
 </script>
   
