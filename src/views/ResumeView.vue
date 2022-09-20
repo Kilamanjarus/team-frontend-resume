@@ -1,10 +1,20 @@
 <script>
-  import axios from "axios";
-  export default {
-    data: function () {
-      return {
-        students: [],
-      };
+import axios from "axios";
+export default {
+  data: function () {
+    return {
+      students: [],
+    };
+  },
+  created: function () {
+    this.indexStudents();
+  },
+  methods: {
+    indexStudents: function () {
+      axios.get("/students.json").then(response => {
+        console.log("students index", response.data);
+        this.students = response.data;
+      });
     },
     created: function () {
       this.indexStudents();
