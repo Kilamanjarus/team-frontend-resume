@@ -26,7 +26,7 @@ export default {
 <template>
   <section id="header" v-if="this.$route.name === 'resumesShow'">
     <header>
-      <span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
+      <span class="image avatar"><img src="student.photo" alt="" /></span>
       <h1 id="logo"><a href="#">{{student.first_name}} {{student.last_name}}</a></h1>
       <p>{{student.short_bio}}</p>
     </header>
@@ -38,6 +38,7 @@ export default {
         <li><a href="#four">Skills</a></li>
         <li><a href="#five">Capstone</a></li>
         <li><a href="#six">Contact</a></li>
+        <li><a href="/resumes">Back to Resumes</a></li>
       </ul>
     </nav>
     <footer>
@@ -116,11 +117,7 @@ export default {
             <h3>Skills</h3>
             <div v-for="skill in student.skills">
               <div class="features">
-                <article>
-                  <div class="inner">
-                    <h5>{{skill.skill}}</h5>
-                  </div>
-                </article>
+                <h5>{{skill.skill}}</h5>
               </div>
             </div>
           </div>
