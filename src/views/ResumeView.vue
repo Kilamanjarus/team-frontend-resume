@@ -21,13 +21,6 @@ export default {
 </script>
   
 <template>
-  <div class="students-index">
-    <h1>All Students</h1>
-    <div v-for="student in students">
-      <h3>{{ student.first_name }}</h3>
-      <!-- <img v-bind:src="student.url" v-bind:alt="student.name" /> -->
-    </div>
-  </div>
   <!-- Three -->
   <section id="three">
     <div class="container">
@@ -41,7 +34,9 @@ export default {
                 src="https://i.etsystatic.com/30677692/r/il/71638b/3580232855/il_fullxfull.3580232855_q0k0.jpg"
                 alt="" /></a>
             <div class="inner">
-              <h4>{{student.first_name}} {{student.last_name}}</h4>
+              <a v-bind:href="`http://localhost:8080/resumes/${student.id}`">
+                <h2>{{student.first_name}} {{student.last_name}}</h2>
+              </a>
               <p></p>
             </div>
           </article>

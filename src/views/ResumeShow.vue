@@ -26,7 +26,7 @@ export default {
 <template>
   <section id="header" v-if="this.$route.name === 'resumesShow'">
     <header>
-      <span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
+      <span class="image avatar"><img src="student.photo" alt="" /></span>
       <h1 id="logo"><a href="#">{{student.first_name}} {{student.last_name}}</a></h1>
       <p>{{student.short_bio}}</p>
     </header>
