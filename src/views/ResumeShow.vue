@@ -43,6 +43,8 @@ export default {
       <ul class="icons">
         <li><a :href="`http://${student.twitter}`" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
         </li>
+        <li><a href="https://www.linkedin.com/in/.../" target="_blank" class="icon brands fa-linkedin"><span
+              class="label">LinkedIn</span></a></li>
         <li><a :href="`http://${student.github}`" class="icon brands fa-github"><span class="label">Github</span></a>
         </li>
       </ul>
