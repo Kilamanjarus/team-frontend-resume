@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <!-- Header -->
     <section id="header" v-if="this.$route.name === 'resumesShow'">
       <header>
