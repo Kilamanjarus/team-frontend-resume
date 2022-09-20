@@ -32,11 +32,12 @@ export default {
     </header>
     <nav id="nav">
       <ul>
-        <li><a href="#one" class="active">About</a></li>
-        <li><a href="#two">Things I Can Do</a></li>
-        <li><a href="#three">A Few Accomplishments</a></li>
-        <li><a href="#four">Capstone</a></li>
-        <li><a href="#five">Contact</a></li>
+        <li><a href="#one" class="active">About Me</a></li>
+        <li><a href="#two">Experience</a></li>
+        <li><a href="#three">Education</a></li>
+        <li><a href="#four">Skills</a></li>
+        <li><a href="#five">Capstone</a></li>
+        <li><a href="#six">Contact</a></li>
       </ul>
     </nav>
     <footer>
