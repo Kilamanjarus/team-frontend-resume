@@ -1,13 +1,13 @@
 <script>
-  export default {
-    data: function () {
-      return {
-        message: "Welcome to Vue.js!",
-      };
-    },
-    created: function () {},
-    methods: {},
-  };
+export default {
+  data: function () {
+    return {
+      message: "Welcome to Vue.js!",
+    };
+  },
+  created: function () { },
+  methods: {},
+};
 </script>
 
 <template>
@@ -16,4 +16,6 @@
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>
