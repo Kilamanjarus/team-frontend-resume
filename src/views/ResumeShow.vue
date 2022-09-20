@@ -147,17 +147,15 @@ export default {
         <!-- five -->
         <section id="five">
           <div class="container">
-            <h3>Capstone</h3>
-            <p>Capstone.description will go here</p>
+            <h3>{{student.capstone.name}}</h3>
             <div class="features">
               <article>
-                <a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>
+                <a href="#" class="image"><img v-bind:src="student.capstone.screenshot" alt="" /></a>
                 <div class="inner">
-                  <h4>Capstone Screenshot</h4>
-                  <p>This is the screenshop demonstration of the capstone project</p>
+                  <p>{{student.capstone.description}} will go here</p>
                 </div>
                 <p></p>
-                <a href="#" class="text">Demo Url</a>
+                <a v-bind:href="student.capstone.url" class="text">Demo Url</a>
               </article>
             </div>
           </div>
