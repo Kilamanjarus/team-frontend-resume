@@ -27,7 +27,7 @@ export default {
       <h3>Students</h3>
       <p>Student Name and a picture of their capstone</p>
       <div class="features">
-        <div v-for="student in students">
+        <div v-for="student in students" class="students">
           <article>
             <!-- <a v-bind:href="`http://localhost:8080/resumes/${student.id}`" class="image"><img v-bind:src="student.photo" alt="" /></a> -->
             <a v-bind:href="`http://localhost:8080/resumes/${student.id}`" class="image"><img
@@ -37,7 +37,6 @@ export default {
               <a v-bind:href="`http://localhost:8080/resumes/${student.id}`">
                 <h2>{{student.first_name}} {{student.last_name}}</h2>
               </a>
-              <p></p>
             </div>
           </article>
         </div>
@@ -45,3 +44,12 @@ export default {
     </div>
   </section>
 </template>
+
+<style>
+.students {
+  border-width: 20px !important;
+  border-style: solid;
+  border-color: #5ccfb1 !important;
+  margin-bottom: 20px;
+}
+</style>
