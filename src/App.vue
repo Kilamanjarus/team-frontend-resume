@@ -3,7 +3,6 @@
     <!-- Header -->
 
     <!-- Router View -->
-
     <router-view />
 
     <!-- Footer -->

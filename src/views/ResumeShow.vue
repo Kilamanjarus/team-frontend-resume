@@ -38,6 +38,7 @@ export default {
         <li><a href="#four">Skills</a></li>
         <li><a href="#five">Capstone</a></li>
         <li><a href="#six">Contact</a></li>
+        <li><a href="/resumes">Back to Resumes</a></li>
       </ul>
     </nav>
     <footer>
@@ -116,11 +117,7 @@ export default {
             <h3>Skills</h3>
             <div v-for="skill in student.skills">
               <div class="features">
-                <article>
-                  <div class="inner">
-                    <h5>{{skill.skill}}</h5>
-                  </div>
-                </article>
+                <h5>{{skill.skill}}</h5>
               </div>
             </div>
           </div>
