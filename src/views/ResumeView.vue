@@ -32,7 +32,7 @@ export default {
             <!-- <a v-bind:href="`http://localhost:8080/resumes/${student.id}`" class="image"><img v-bind:src="student.photo" alt="" /></a> -->
             <a v-bind:href="`http://localhost:8080/resumes/${student.id}`" class="image"><img
                 src="https://i.etsystatic.com/30677692/r/il/71638b/3580232855/il_fullxfull.3580232855_q0k0.jpg"
-                alt="" /></a>
+                alt=""></a>
             <div class="inner">
               <a v-bind:href="`http://localhost:8080/resumes/${student.id}`">
                 <h2>{{student.first_name}} {{student.last_name}}</h2>
@@ -41,6 +41,7 @@ export default {
           </article>
         </div>
       </div>
+    </div>
     </div>
   </section>
 </template>
