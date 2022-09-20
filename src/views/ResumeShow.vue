@@ -24,6 +24,33 @@ export default {
 </script>
   
 <template>
+  <section id="header" v-if="this.$route.name === 'resumesShow'">
+    <header>
+      <span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
+      <h1 id="logo"><a href="#">Willis Corto</a></h1>
+      <p>I got reprogrammed by a rogue AI<br />
+        and now I'm totally cray</p>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li><a href="#one" class="active">About</a></li>
+        <li><a href="#two">Things I Can Do</a></li>
+        <li><a href="#three">A Few Accomplishments</a></li>
+        <li><a href="#four">Capstone</a></li>
+        <li><a href="#five">Contact</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+    </footer>
+  </section>
+
   <div class="home">
 
     <!-- Wrapper -->
@@ -39,14 +66,10 @@ export default {
           </div>
           <div class="container">
             <header class="major">
-              <h2>Read Only</h2>
-              <p>Just an incredibly simple responsive site<br />
-                template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+              <h2>{{student.first_name}} {{student.last_name}}</h2>
+              <p>Software Developer</p>
             </header>
-            <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum
-              sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor
-              ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac
-              faucibus integer non. Adipiscing cubilia elementum.</p>
+            <p>{{student.short_bio}}</p>
           </div>
         </section>
 
