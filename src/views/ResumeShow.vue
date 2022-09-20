@@ -27,9 +27,8 @@ export default {
   <section id="header" v-if="this.$route.name === 'resumesShow'">
     <header>
       <span class="image avatar"><img src="/images/avatar.jpg" alt="" /></span>
-      <h1 id="logo"><a href="#">Willis Corto</a></h1>
-      <p>I got reprogrammed by a rogue AI<br />
-        and now I'm totally cray</p>
+      <h1 id="logo"><a href="#">{{student.first_name}} {{student.last_name}}</a></h1>
+      <p>{{student.short_bio}}</p>
     </header>
     <nav id="nav">
       <ul>
@@ -42,12 +41,12 @@ export default {
     </nav>
     <footer>
       <ul class="icons">
-        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a :href="`http://${student.twitter}`" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+        </li>
         <li><a href="https://www.linkedin.com/in/.../" target="_blank" class="icon brands fa-linkedin"><span
               class="label">LinkedIn</span></a></li>
-        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a :href="`http://${student.github}`" class="icon brands fa-github"><span class="label">Github</span></a>
+        </li>
       </ul>
     </footer>
   </section>
@@ -77,17 +76,19 @@ export default {
         <!-- Two -->
         <section id="two">
           <div class="container">
-            <h3>Things I Can Do</h3>
-            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.
-              Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">Write all the code</li>
-              <li class="icon solid fa-cubes">Stack small boxes</li>
-              <li class="icon solid fa-book">Read books and stuff</li>
-              <li class="icon solid fa-coffee">Drink much coffee</li>
-              <li class="icon solid fa-bolt">Lightning bolt</li>
-              <li class="icon solid fa-users">Shadow clone technique</li>
-            </ul>
+            <h3>Experience</h3>
+            <div v-for="experience in student.experience">
+              <h4>{{experience.job_title}} - {{experience.company_name}}</h4>
+              <div class="row">
+                <div class="col-6 col-12-xsmall">
+                  <ul class="alt">
+                    <li>{{experience.start_date}} - {{experience.end_date}}</li>
+                    <h5>details:</h5>
+                    <p>{{experience.details}}</p>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -206,8 +207,6 @@ export default {
         </section>
       </div>
     </div>
-
-
   </div>
 </template>
   
