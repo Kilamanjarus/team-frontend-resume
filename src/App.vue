@@ -3,10 +3,6 @@
     <!-- Header -->
 
     <!-- Router View -->
-    <nav>
-      <router-link to="/resumes">Resumes</router-link>
-    </nav>
-
     <router-view />
 
     <!-- Footer -->
