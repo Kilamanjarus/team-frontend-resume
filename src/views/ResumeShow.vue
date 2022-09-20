@@ -113,34 +113,15 @@ export default {
         <!-- four -->
         <section id="four">
           <div class="container">
-            <h3>A Few Accomplishments</h3>
-            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non.
-              Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-            <div class="features">
-              <article>
-                <a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>
-                <div class="inner">
-                  <h4>Possibly broke spacetime</h4>
-                  <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
-                    adipiscing ornare amet.</p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"><img src="/images/pic02.jpg" alt="" /></a>
-                <div class="inner">
-                  <h4>Terraformed a small moon</h4>
-                  <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
-                    adipiscing ornare amet.</p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"><img src="/images/pic03.jpg" alt="" /></a>
-                <div class="inner">
-                  <h4>Snapped dark matter in the wild</h4>
-                  <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
-                    adipiscing ornare amet.</p>
-                </div>
-              </article>
+            <h3>Skills</h3>
+            <div v-for="skill in student.skills">
+              <div class="features">
+                <article>
+                  <div class="inner">
+                    <h5>{{skill.skill}}</h5>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </section>
@@ -148,17 +129,15 @@ export default {
         <!-- five -->
         <section id="five">
           <div class="container">
-            <h3>Capstone</h3>
-            <p>Capstone.description will go here</p>
+            <h3>{{student.capstone.name}}</h3>
             <div class="features">
               <article>
-                <a href="#" class="image"><img src="/images/pic01.jpg" alt="" /></a>
+                <a href="#" class="image"><img v-bind:src="student.capstone.screenshot" alt="" /></a>
                 <div class="inner">
-                  <h4>Capstone Screenshot</h4>
-                  <p>This is the screenshop demonstration of the capstone project</p>
+                  <p>{{student.capstone.description}}</p>
                 </div>
                 <p></p>
-                <a href="#" class="text">Demo Url</a>
+                <a v-bind:href="student.capstone.url" class="text">Demo Url</a>
               </article>
             </div>
           </div>
